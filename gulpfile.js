@@ -14,3 +14,8 @@ gulp.task('minify-html', function() {
     .pipe(minifyHTML(opts))
     .pipe(gulp.dest('/dist/'));
 });
+gulp.task('min-jpg', function(){
+    gulp.src('src/img/*')
+        .pipe(imageMin())
+        .pipe(gulp.dest('dist/img'));
+});
