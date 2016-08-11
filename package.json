@@ -18,9 +18,10 @@
   "homepage": "https://github.com/redheaddy/small_project#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-html-prettify": "0.0.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^3.0.2",
-    "gulp-minify-html": "^1.0.6",
     "gulp-tinypng": "^1.0.2",
     "gulp-watch": "^4.3.9"
   }
