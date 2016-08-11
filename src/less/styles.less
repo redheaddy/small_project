@@ -1,4 +1,54 @@
 // out: ../../dist/css/styles.css
-body{
-    font-size: 18px;
+@semibold10: 13px ProximaNovaSemibold;
+@semibold13: 17px ProximaNovaSemibold;
+@bold18: 18px ProximaNovaBold;
+@gray:#9c9c9c;
+@black:#1e1e1e;
+
+@font-face{
+    font-family: ProximaNovaBold;
+    src: url(../../fonts/ProximaNovaBold.otf)
 }
+@font-face{
+    font-family: ProximaNovaRegular;
+    src: url(../../fonts/ProximaNovaRegular.otf)
+}
+@font-face{
+    font-family: ProximaNovaSemibold;
+    src: url(../../fonts/ProximaNovaSemibold.otf)
+}
+@font-face{
+    font-family: TrajanPro-bold;
+    src: url(../../fonts/TrajanPro-Bold.otf)
+}
+@font-face{
+    font-family: TrajanPro-regular;
+    src: url(../../fonts/TrajanPro-Regular.otf)
+}
+.top{
+    font:@semibold10;
+    color:@gray;
+    text-transform: uppercase;
+    *{
+        display:inline-block
+    }
+    .center{
+        width: 50%;
+        a{
+            color:@gray;
+            text-decoration: none;
+        }
+    }
+    .right{
+        width: 25%;
+        float:right;
+    }
+    .left{
+        .right;
+        float:left;
+    }
+}
+.num{
+        font-size: 19px;
+        color:@black;
+    }
