@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
-    minHtml = require('gulp-minify-html'),
+    minHTML = require('gulp-minify-html'),
     imageMin = require('gulp-imagemin');
     //pngMin = reqire('gulp-tinypng');
 
@@ -10,8 +10,8 @@ gulp.task('minify-html', function() {
     spare:true
   };
 
-  return gulp.src('*.html')
-    .pipe(minifyHTML(opts))
+  return gulp.src('src/*.html')
+    .pipe(minHTML(opts))
     .pipe(gulp.dest('/dist/'));
 });
 gulp.task('min-jpg', function(){

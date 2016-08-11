@@ -1,9 +1,20 @@
 // out: ../../dist/css/styles.css
-@semibold10: 13px ProximaNovaSemibold;
-@semibold13: 17px ProximaNovaSemibold;
+@semibold10: 10px ProximaNovaSemibold;
+@semibold13: 13px ProximaNovaSemibold;
+@bold13: 13px ProximaNovaBold;
 @bold18: 18px ProximaNovaBold;
 @gray:#9c9c9c;
 @black:#1e1e1e;
+@padding-small:20px;
+@padding-top-bot:20px 0;
+@padding-left-right:0 30px 0 40px;
+@border:1px solid #f2f2f2;
+
+.responsive(){
+    width:100%;
+    height: auto;
+}
+
 
 @font-face{
     font-family: ProximaNovaBold;
@@ -25,30 +36,107 @@
     font-family: TrajanPro-regular;
     src: url(../../fonts/TrajanPro-Regular.otf)
 }
+@font-face{
+    font-family: Brandon_bld;
+    src: url(../../fonts/Brandon_bld.otf)
+}
 .top{
     font:@semibold10;
     color:@gray;
     text-transform: uppercase;
-    *{
+    >*{
         display:inline-block
     }
-    .center{
+    .top-col-center{
         width: 50%;
+        padding-top: 8px;
         a{
             color:@gray;
             text-decoration: none;
+            display: block;
+            padding: @padding-small;
+        }
+        ul{
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+            li{
+                display: inline-block;
+            }
         }
     }
-    .right{
+    .top-col-right{
+        padding: @padding-small;
         width: 25%;
-        float:right;
+        div{
+            width: 49%;
+            display: inline-block;
+        }
+        .basket{
+            width: 20%;
+            padding-top:3px;
+            img{
+                position: relative;
+                top:2px;
+            }
+            span{
+                color:@black;
+            }
+        }
     }
-    .left{
-        .right;
-        float:left;
+    .top-col-left{
+        .top-col-right;
     }
 }
 .num{
         font-size: 19px;
         color:@black;
+}
+.float-left{
+    float: left;
+    text-align: left;
+}
+.float-right{
+    float: right;
+    text-align: right;
+}
+.site-header{
+    color:@black;
+    font:32px Brandon_bld;
+    text-transform: uppercase;
+    text-align: center;
+}
+.products{
+    font:@bold13;
+    padding: @padding-left-right;
+    border:@border;
+
+    .products-menu{
+        padding-left: 0;
+        list-style: none;
+        text-align: justify;
+        margin: 0;
+        a{
+            color: @black;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            padding: @padding-top-bot;
+        }
+
+        li{
+            display: inline-block;
+            width:10.2%;
+            &:last-child{
+                width: 5%;
+            }
+        }
+
     }
+}
+.slider{
+    img{
+        .responsive;
+    }
+}
