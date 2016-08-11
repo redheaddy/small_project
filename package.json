@@ -18,6 +18,7 @@
   "homepage": "https://github.com/redheaddy/small_project#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^3.0.2",
     "gulp-minify-html": "^1.0.6",
     "gulp-tinypng": "^1.0.2",

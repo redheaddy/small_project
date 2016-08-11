@@ -12,7 +12,7 @@ gulp.task('minify-html', function() {
 
   return gulp.src('src/*.html')
     .pipe(minHTML(opts))
-    .pipe(gulp.dest('/dist/'));
+    .pipe(gulp.dest('dist'));
 });
 gulp.task('min-jpg', function(){
     gulp.src('src/img/*')
