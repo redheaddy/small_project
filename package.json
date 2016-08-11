@@ -1,0 +1,26 @@
+{
+  "name": "small_project",
+  "version": "1.0.0",
+  "description": "small project when nothing to do",
+  "main": "html\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b\u001b[3~\u001b[3~\u001b[C\u001b[C\u001b[C\u001b[3~",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redheaddy/small_project.git"
+  },
+  "author": "redheaddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redheaddy/small_project/issues"
+  },
+  "homepage": "https://github.com/redheaddy/small_project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-watch": "^4.3.9"
+  }
+}
