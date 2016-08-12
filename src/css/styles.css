@@ -194,12 +194,30 @@
   opacity: .3;
 }
 .shop .shop_item {
-  width: 33%;
+  width: 33.33%;
   display: inline-block;
   border-bottom: 1px solid #f2f2f2;
   border-left: 1px solid #f2f2f2;
   position: relative;
   transition: all .4s;
+  float: left;
+}
+.shop .shop_item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #c59a77;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all .4s;
+}
+.shop .shop_item:hover::before {
+  opacity: 0.2;
+}
+.shop .shop_item:hover button {
+  background: #c59a77 url('../img/basket1.png') center no-repeat;
 }
 .shop .shop_item img {
   width: 100%;
@@ -221,6 +239,8 @@
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.16);
   transition: all .4s;
 }
-.shop .shop_item button:hover {
-  background: #c59a77 url('../img/basket1.png') center no-repeat;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
