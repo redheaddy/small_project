@@ -5,6 +5,7 @@
 @bold18: 18px ProximaNovaBold;
 @gray:#9c9c9c;
 @black:#1e1e1e;
+@gold:#c59a77;
 @padding-small:20px;
 @padding-top-bot:20px 0;
 @padding-left-right:0 30px 0 40px;
@@ -159,9 +160,44 @@
             position:absolute;
             top:0;
             left:0;
+            margin-top: 30px;
+            font:@bold18;
+            padding: @padding-left-right;
+        }
+        .intro_header-black{
+            color:@black;
+            ~button{
+                background:@black url(../img/arrow1.png) center no-repeat;
+            }
+         }
+        .intro_header-gold{
+             color:@gold;
+            ~button{
+                background: @gold url(../img/arrow2.png) center no-repeat;
+            }
+        }
+        .intro_header-white{
+            color:#fff;
+            ~button{
+                background: white url(../img/arrow.png) center no-repeat;
+            }
         }
         img{
             .responsive;
+        }
+        button{
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            border: none;
+            outline:none;
+            border-radius:50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            &:hover{
+                opacity: .3;
+            }
         }
     }
 }
