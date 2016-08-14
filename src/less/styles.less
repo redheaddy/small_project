@@ -10,12 +10,18 @@
 @padding-top-bot:20px 0;
 @padding-left-right:0 30px 0 40px;
 @border:1px solid #f2f2f2;
+//media
+@tablet: ~"(min-width: 768px)";
+@tablet-max: ~"(min-width: 1024px)";
+@desktop-min: ~"(min-width: 1240px)";
+@desktop-mid: ~"(min-width: 1360px)";
+@desktop-lg: ~"(min-width: 1600px)";
 
 .responsive(){
     width:100%;
     height: auto;
 }
-.shop-h3{
+.shop-h3(){
     width: 50%;
     font: @bold18;
     text-transform: uppercase;
@@ -69,7 +75,7 @@
         width: 50%;
         padding-top: 8px;
         a{
-            .anchor;
+            .anchor();
             color:@gray;
             padding: @padding-small;
         }
@@ -108,8 +114,14 @@
     }
 }
 .num{
-        font-size: 19px;
-        color:@black;
+    font-size: 19px;
+    color:@black;
+    @media @tablet-max{
+        font-size: 14px;
+    }
+    @media @desktop-min{
+        font-size: 18px;
+    }
 }
 .float-left{
     float: left;
@@ -136,7 +148,7 @@
         text-align: justify;
         margin: 0;
         a{
-            .anchor;
+            .anchor();
             color: @black;
             text-align: center;
             padding: @padding-top-bot;
@@ -152,11 +164,11 @@
 }
 .slider{
     img{
-        .responsive;
+        .responsive();
     }
 }
 .intro{
-    .clearfix;
+    .clearfix();
     .intro_item{
         display: inline-block;
         position: relative;
@@ -189,7 +201,7 @@
             }
         }
         img{
-            .responsive;
+            .responsive();
         }
         button{
             position: absolute;
@@ -240,7 +252,7 @@
             }
         }
         img{
-            .responsive;
+            .responsive();
         }
         .shop_info{
             position: absolute;
@@ -250,7 +262,7 @@
             width: 100%;
 
             h3{
-                .shop-h3;
+                .shop-h3();
             }
             span{
                 color: @gray;
@@ -288,10 +300,10 @@
         width: 66.67%;
         position: relative;
         img{
-            .responsive;
+            .responsive();
         }
         h3{
-            .shop-h3;
+            .shop-h3();
             width: 100%
 
         }
@@ -310,6 +322,8 @@
     }
 }
 footer{
+    position: relative;
+    top: -1px;
     .clearfix;
     background-color:@black;
     padding-bottom: 70px;
@@ -367,6 +381,6 @@ footer{
 
 }
 .row{
-    .clearfix;
+    .clearfix();
 }
-
+@media
