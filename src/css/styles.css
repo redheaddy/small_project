@@ -27,6 +27,12 @@
   font: 10px ProximaNovaSemibold;
   color: #9c9c9c;
   text-transform: uppercase;
+  position: relative;
+}
+.top:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .top > * {
   display: inline-block;
@@ -51,6 +57,19 @@
 .top .top-col-center ul li {
   display: inline-block;
 }
+@media (max-width: 1024px) {
+  .top .top-col-center ul li {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .top .top-col-center {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
 .top .top-col-right {
   padding: 20px;
   width: 19%;
@@ -69,6 +88,12 @@
 }
 .top .top-col-right .basket span {
   color: #1e1e1e;
+}
+@media (max-width: 1024px) {
+  .top .top-col-right {
+    width: 49%;
+    position: relative;
+  }
 }
 .top .top-col-left {
   padding: 20px;
@@ -90,19 +115,15 @@
 .top .top-col-left .basket span {
   color: #1e1e1e;
 }
+@media (max-width: 1024px) {
+  .top .top-col-left {
+    width: 49%;
+    position: relative;
+  }
+}
 .num {
   font-size: 19px;
   color: #1e1e1e;
-}
-@media (min-width: 1024px) {
-  .num {
-    font-size: 14px;
-  }
-}
-@media (min-width: 1240px) {
-  .num {
-    font-size: 18px;
-  }
 }
 .float-left {
   float: left;
@@ -144,6 +165,18 @@
 .products .products-menu li:last-child {
   width: 5%;
 }
+@media (max-width: 1024px) {
+  .products .products-menu li:last-child {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .products .products-menu li {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
 .slider img {
   width: 100%;
   height: auto;
@@ -166,6 +199,12 @@
   margin-top: 30px;
   font: 18px ProximaNovaBold;
   padding: 0 30px 0 40px;
+}
+@media (max-width: 1024px) {
+  .intro .intro_item .intro_header {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
 }
 .intro .intro_item .intro_header-black {
   color: #1e1e1e;
@@ -200,6 +239,12 @@
   height: 40px;
   cursor: pointer;
   transition: all .4s;
+}
+@media (max-width: 1024px) {
+  .intro .intro_item button {
+    bottom: 20px;
+    left: 20px;
+  }
 }
 .intro .intro_item:hover button {
   opacity: .3;
@@ -276,10 +321,20 @@
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.16);
   transition: all .4s;
 }
+@media (max-width: 1024px) {
+  .shop .shop_item {
+    width: 50%;
+  }
+}
 .shop .shop_card {
   float: left;
   width: 66.67%;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .shop .shop_card {
+    width: 100%;
+  }
 }
 .shop .shop_card img {
   width: 100%;
